@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/9a1dc8009d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Spotify-Late Night Jazz</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Side nav -->
+      <div class="sidenav">
+        <div class="logo">
+          <a href=""><i class="fab fa-spotify"></i>Spotify</a>
+        </div>
+        <div class="links">
+          <a href=""><i class="fas fa-home"></i>Home</a>
+          <a href=""><i class="fas fa-search"></i>Search</a>
+          <a href=""><i class="fas fa-book"></i>Your Library</a>
+        </div>
+        <!-- playlist and liked songs -->
+        <div class="play-setting">
+          <a href=""><i class="far fa-plus-square"></i>Create Playist</a>
+          <a href=""><i class="fas fa-heart"></i>Liked Songs</a>
+          <!-- Call to action -->
+          <a class="download" href=""
+            ><i class="fas fa-arrow-circle-down"></i>Intall App</a
+          >
+        </div>
+      </div>
+      <div class="main-display">
+        <!-- Main display nav -->
+        <div class="nav-container">
+          <div class="button-container">
+            <button id="prev-btn">
+              <i class="fas fa-chevron-circle-left"></i>
+            </button>
+            <button id="next-btn">
+              <i class="fas fa-chevron-circle-right"></i>
+            </button>
+          </div>
+          <div class="activity-container">
+            <button id="upgrade-btn">Upgrade</button>
+            <button id="profile-btn"><i class="far fa-user"></i>maMen</button>
+          </div>
+        </div>
+
+        <!-- Album Display -->
+        <div class="album-info">
+          <div class="album-image"></div>
+          <div class="album-details">
+            <h1>Late Night Jazz</h1>
+            <h5 class="description">
+              The perfect backdrop to an evening spent relaxing in solitude.
+            </h5>
+            <a href="">Spotify</a
+            ><span>. 1,890,467 likes . 100 songs, 9hr 5min</span>
+          </div>
+        </div>
+
+        <!-- Songs -->
+
+        <div class="songs">
+          <div class="reactions">
+            <div class="playbtn"></div>
+            <div class="likebtn"><i class="fas fa-heart"></i></div>
+            <div id="menu-btn"><i class="fas fa-ellipsis-h"></i></div>
+          </div>
+          <div class="song">
+            <div class="heading">
+              <h3># TITLE</h3>
+              <h3>ALBUM</h3>
+              <h3>DATE ADDED</h3>
+              <h3><i class="far fa-clock"></i></h3>
+            </div>
+            <div class="number-1">
+              <div class="piece-detail">
+                <div class="cover-img"></div>
+                <div class="name-artist">
+                  <h5 class="song-name">The Dreamer</h5>
+                  <h4>Immanuel Wikins</h4>
+                </div>
+              </div>
+              <h3>Omega</h3>
+              <h3>4 days ago</h3>
+              <h3>3:37</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.sidenav {
+  position: absolute;
+  height: 100%;
+  width: 250px;
+  background: #000;
+  position: sticky;
+  /* flex: 1; */
+  /* z-index: 1; */
+}
+.sidenav .logo {
+  width: 100%;
+  margin: 30px 35px;
+  display: flex;
+  justify-content: flex-start;
+}
+.sidenav .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 1;
+}
+.sidenav .logo .fab {
+  font-size: 2.5rem;
+  padding-right: 5px;
+}
+.links {
+  margin: 30px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  display: block;
+  padding: 10px 40px;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.links a:hover {
+  opacity: 1;
+}
+.links .fas {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 1rem;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.links .fas:hover {
+  opacity: 1;
+}
+.play-setting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.play-setting a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  display: block;
+  padding: 10px 40px;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.fas,
+.far {
+  margin-right: 15px;
+  font-size: 1rem;
+}
+
+/* ----------Main Display-------- */
+.main-display {
+  background: linear-gradient(
+    to bottom,
+    rgba(51, 96, 28, 0.8),
+    rgba(48, 89, 43, 0.7)
+  );
+  flex: 1;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+.nav-container button {
+  background: transparent;
+}
+#prev-btn,
+#next-btn {
+  border: none;
+}
+.nav-container .fas {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.activity-container button {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 40px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.8rem;
+}
+
+/* ------Album Display------- */
+
+.album-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 25px;
+}
+.album-image {
+  background-image: url("images/img-1.jpg");
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+.album-details h1 {
+  font-size: 6rem;
+  color: #fff;
+  font-weight: 600;
+}
+.album-details h5,
+a,
+span {
+  color: #fff;
+  opacity: 0.8;
+  font-weight: 300;
+}
+.album-details a,
+span {
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.album-details a {
+  opacity: 1;
+  font-weight: 500;
+}
+
+/* ---------Songs--------- */
+.songs {
+  background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5));
+}
+.reactions {
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 0;
+}
+.reactions .playbtn {
+  background-image: url("images/Spotify-Play-Button-1.png");
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+.reactions .likebtn .fas {
+  color: rgb(29, 185, 84);
+  font-size: 2.5rem;
+}
+.reactions #menu-btn .fas {
+  color: #fff;
+  opacity: 0.8;
+  font-size: 1.5rem;
+  /* font-weight: 500; */
+}
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 35px;
+  margin-top: 0;
+  position: relative;
+}
+.heading h3 {
+  color: #fff;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  font-weight: 300;
+}
+.heading::after {
+  content: "";
+  width: 94%;
+  height: 1px;
+  position: absolute;
+  top: 30px;
+  background: #fff;
+  opacity: 0.4;
+}
+.number-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 35px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.piece-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  gap: 5px;
+}
+
+.piece-detail .cover-img {
+  width: 40px;
+  height: 40px;
+  background-image: url("images/player.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.number-1 h3,
+h4 {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.name-artist {
+  padding-left: 5px;
+}
+.name-artist h5 {
+  font-weight: 700;
+  color: #fff;
+}
